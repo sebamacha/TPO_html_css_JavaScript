@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*:focus {
+	outline: none;
+}
+
+body {
+	background-color: #fffffa;
+}
+
+header {
+	background-color: #9dadd3;
+	margin-bottom: 20px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.wrapper {
+	margin: auto;
+	max-width: 1000px;
+	overflow: hidden;
+	width: 90%;
+}
+
+header .logo {
+	color: #f2f2f2;
+	float: left;
+	font-size: 50px;
+	line-height: 200px;
+  padding: 0%;
+  margin: 0%;
+}
+
+header nav {
+	float: right;
+	line-height: 200px;
+}
+
+header nav a {
+	color: #ffffff;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: normal;
+	padding: 10px 20px;
+	text-decoration: none;
+	transition: all 500ms ease;
+}
+
+header nav a:hover {
+	background-color: #f56f3a;
+	border-radius: 50px;
+}
+
+.header2 {
+	height: 100px;
+	position: fixed;
+}	
+
+.header2 .logo {
+	font-size: 30px;
+	line-height: 100px;
+}
+
+.header2 nav {
+	line-height: 100px;
+}
+
+.contenido p {
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 950px) {
+	header .logo,
+	header nav {
+		line-height: 100px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.header2 {
+		height: auto;
+	}
+
+	.header2 .logo,
+	.header2 nav {
+		line-height: 50px;
+	}
+}
