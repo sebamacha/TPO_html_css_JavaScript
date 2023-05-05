@@ -82,23 +82,26 @@ body {
 }
 .navbar {
   grid-area: navbar;
-  background-color: #abb1ab;
+  background-color: #8e918e;
 }
 
 .sidebar {
   grid-area: sidebar;
-  background-color: #797474;
+  background-color: #8e918e;
 }
 
 .main {
     
     max-width: 80%;
-    background-color: #726c6c;
+    background-color: #8e918e;
     padding: 0%;
     margin: 0%;
-    margin-left: 120px;
+
     height: 70%;
-  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-bottom: 30px;
     display: flex;
     justify-content: center; /* Centrado horizontal */
     align-items: center; /* Centrado vertical */
@@ -106,6 +109,9 @@ body {
 .footer {
   grid-area: footer;
   background-color: #2b2d2e;
+  color: aliceblue;
+  font-family: font-family: 'Caveat', cursive;
+  font-size: 16px;
 }
 
 .grid-container {
@@ -121,13 +127,13 @@ body {
 
 @media (min-width: 600px) {
   .grid-container {
-    /* grid-template-columns: 200px auto;
+    grid-template-columns: 200px auto;
     grid-template-rows: 100px 50px auto 100px;
     grid-template-areas: 
     "header  header"
     "navbar  navbar"
     "sidebar main"
-    "footer  footer"; */
+    "footer  footer";
 
     grid-template:
       "header  header" 100px
