@@ -33,7 +33,7 @@
 }
 
 .nav-links a {
-	color: white;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold;
@@ -74,12 +74,12 @@ a {
 	text-decoration: none;
 	font-family: "roboto";
 	font-size: 1.1rem;
-	color: azure;
+	color: rgb(0, 0, 0);
 	text-transform: uppercase;
 }
 
 ul li:hover {
-	background: #663399;
+	background: #ee6e73;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -141,7 +141,7 @@ video {
 #texto-video {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	font-size: 50px;
-	color: #663399;
+	color: #ee6e73;
 	margin-top: 50px;
 }
 /*texto parpadea*/
@@ -207,7 +207,8 @@ body {
 	height: 100%;
 	width: 100%;
 	place-items: center;
-	background: #e0e5ec;
+	background: #d7d9dd;
+
 }
 
 .wrapper {
@@ -343,7 +344,7 @@ body {
 #h1redes {
 	text-align: center;
 	font-size: 50px;
-	color: #070707;
+	color: #ee6e73;
 	font-weight: 500;
 	margin-top: 70px;
 }
@@ -384,7 +385,7 @@ body {
 	font-weight: bold;
 	text-align: center;
 	font-family: "Oswald", sans-serif;
-	color: #663399;
+	color: #ee6e73;
 	display: flex;
 	height: 100%;
 	width: auto;
@@ -398,7 +399,7 @@ body {
 	align-items: center;
 	display: flexbox;
 	margin: 0px;
-	background-color: #663399;
+	background-color: #ee6e73;
 }
 
 #psobrenosotros {
@@ -428,6 +429,15 @@ body {
 	height: 200%;
 	display: block;
 }
+
+/*formulario de contacto*/
+.formaliado{
+  margin-top: 60px;
+  align-items: center;
+  display: flex;
+  ;
+
+}
 /*----------footer--------*/
 #footer {
 	display: flexbox;
@@ -437,7 +447,7 @@ body {
 	height: 150px;
 	background-color: #000000;
 	margin-top: 100px;
-  color: #e0e5ec;
+  color: #ee6e73;
   font-size: 18px;
 }
 
