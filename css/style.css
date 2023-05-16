@@ -455,7 +455,14 @@ body {
 
 /*contacto*/
 
+.validacion{
 
+	width: 200px;
+	text-align: center;
+	margin: auto;
+	color: #ee6e73;
+	padding-top: 20px;
+}
 
 /* Animaciones */
 
