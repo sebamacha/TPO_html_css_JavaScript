@@ -58,3 +58,20 @@ botones.forEach((boton) => {
 		}
 	});
 });
+
+const currency = "USD"; // Moneda base, en este caso, dólar
+const targetCurrency = "EUR"; // Moneda de destino
+
+fetch(
+	`https://api.exchangeratesapi.io/latest?base=${currency}&symbols=${targetCurrency}`
+)
+	.then((response) => response.json())
+	.then((data) => {
+		const exchangeRate = data.rates[targetCurrency];
+		document.getElementById(
+			"exchangeRate"
+		).innerText = `1 ${currency} = ${exchangeRate} ${targetCurrency}`;
+	})
+	.catch((error) => {
+		console.error("Error al acceder a la API de cotizaciones de dólar", error);
+	});

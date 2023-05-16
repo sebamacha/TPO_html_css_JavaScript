@@ -196,6 +196,25 @@
       </div>
     </div>
   </section>
+  <section>
+    <p  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:18px;" id="exchangeRate"></p>
+
+  <script>
+    const currency = 'USD'; // Moneda base, en este caso, dólar
+    const targetCurrency = 'EUR'; // Moneda de destino
+
+    fetch(`https://api.exchangeratesapi.io/latest?base=${currency}&symbols=${targetCurrency}`)
+      .then(response => response.json())
+      .then(data => {
+        const exchangeRate = data.rates[targetCurrency];
+        const exchangeRateText = `1 ${currency} = ${exchangeRate} ${targetCurrency}`;
+        document.getElementById('exchangeRate').innerText = exchangeRateText;
+      })
+      .catch(error => {
+        console.error('Error al acceder a la API de cotizaciones de dólar', error);
+      });
+  </script>
+  </section>
   <footer id="footer">
     <h4>&copy Trabajo Practico Obligatorio</h4>
     <h5>Codo a Codo - Python Full Stack</h5>
