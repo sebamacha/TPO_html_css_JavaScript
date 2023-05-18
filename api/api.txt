@@ -1,2 +1,4 @@
-d4c34c96159e4c8c86cfe1e83536f679
-https://www.weatherbit.io/api
+url de la api
+https://ipgeolocation.abstractapi.com
+api key
+37ceec476b0a4646a2b1dfd771b557c4
