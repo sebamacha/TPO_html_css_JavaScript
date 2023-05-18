@@ -17,7 +17,11 @@
 </head>
 
 <body>
-  <header id="logonegro">
+
+ <header id="logonegro">
+<div class="api-data-container">
+  <p style="background-color: #ee6e73; color: aliceblue; text-align: center;" id="combined-data"></p>
+</div>
     <div>
       <span id="texto-video" style="color:#ee6e73; display; text-align: center;">
         <h1 style="font-size: 80px; font-family: 'Konkhmer Sleokchher'; color: #ee6e73; ">Al toque</h1>
@@ -118,46 +122,46 @@
   </section>
 
  <!-- ------------------contacto----------------------------- -->
- 	<section  id="contactolink" class="container">
+<section id="contactolink" class="container">
   <div id="formaliado" class="row">
     <h3 style="color: #ee6e73; margin-top: 35px;" class="center-align">Formulario de Contacto</h3>
     <article class="col s12 m6 offset-m3">
-      <form method="POST" action="formulario-contacto.php">
+      <form action="https://formspree.io/f/mbjebblz" method="POST">
+
         <div class="input-field">
-          <i class="material-icons prefix">perm_identity</i>
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" >
+          <i class="material-icons prefix"></i>
+          <label for="name" class="active">Nombre</label>
+          <input type="text" name="nombre">
         </div>
 
         <div class="input-field">
           <i class="material-icons prefix">person_pin</i>
-          <label for="apellido">Apellido</label>
-          <input type="text" name="apellido" >
+          <label for="apellido" class="active">Apellido</label>
+          <input type="text" name="apellido">
         </div>
 
         <div class="input-field">
           <i class="material-icons prefix">email</i>
-          <label for="email">Email</label>
+          <label for="email" class="active">Email</label>
           <input type="email" name="email">
         </div>
 
         <div class="input-field">
           <i class="material-icons prefix">mode_edit</i>
-          <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" id="" rows="10" class="materialize-textarea" length="140" ></textarea>
+          <label for="mensaje" class="active">Mensaje</label>
+          <textarea name="mensaje" id="message" rows="10" class="materialize-textarea" length="140"></textarea>
         </div>
-        <p class="validacion" id="validacion" ></p>
+        <p class="validacion" id="validacion"></p>
         <p class="center-align">
           <button style="color: #000000; background-color: #ee6e73;" class="waves-effect waves-light btn" type="submit"><i class="material-icons right">send</i>enviar</button>
+          <button style="color: #000000; background-color: #ee6e73;" class="waves-effect waves-light btn" type="reset"><i class="material-icons right">clear</i>limpiar</button>
         </p>
-
       </form>
-
     </article>
-
-
   </div>
 </section>
+
+
 
   <!-- redes sociales -->
   <section id="redeslink" >
@@ -196,25 +200,13 @@
       </div>
     </div>
   </section>
+  
   <section>
-    <p  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:18px;" id="exchangeRate"></p>
 
-  <script>
-    const currency = 'USD'; // Moneda base, en este caso, dólar
-    const targetCurrency = 'EUR'; // Moneda de destino
-
-    fetch(`https://api.exchangeratesapi.io/latest?base=${currency}&symbols=${targetCurrency}`)
-      .then(response => response.json())
-      .then(data => {
-        const exchangeRate = data.rates[targetCurrency];
-        const exchangeRateText = `1 ${currency} = ${exchangeRate} ${targetCurrency}`;
-        document.getElementById('exchangeRate').innerText = exchangeRateText;
-      })
-      .catch(error => {
-        console.error('Error al acceder a la API de cotizaciones de dólar', error);
-      });
-  </script>
   </section>
+
+
+
   <footer id="footer">
     <h4>&copy Trabajo Practico Obligatorio</h4>
     <h5>Codo a Codo - Python Full Stack</h5>

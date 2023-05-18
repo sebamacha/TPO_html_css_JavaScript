@@ -1,0 +1,2 @@
+d4c34c96159e4c8c86cfe1e83536f679
+https://www.weatherbit.io/api

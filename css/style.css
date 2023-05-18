@@ -235,7 +235,7 @@ body {
 	transition: all 0.3s ease-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
 	.wrapper .button {
 		height: 40px;
 		width: 40px;
@@ -485,3 +485,18 @@ body {
     display: flex;
   }
 }
+
+//api formato
+
+ .api-data-container {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+	
+
+  .api-data-container p {
+    white-space: nowrap;
+    margin-right: 10px;
+		
+  }

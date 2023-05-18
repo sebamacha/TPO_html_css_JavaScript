@@ -58,3 +58,25 @@ botones.forEach((boton) => {
 		}
 	});
 });
+
+//api datos
+
+function httpGetAsync(url, callback) {
+	const xmlHttp = new XMLHttpRequest();
+	xmlHttp.onreadystatechange = function () {
+		if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
+			callback(xmlHttp.responseText);
+	};
+	xmlHttp.open("GET", url, true);
+	xmlHttp.send(null);
+}
+
+const url =
+	"https://ipgeolocation.abstractapi.com/v1/?api_key=37ceec476b0a4646a2b1dfd771b557c4";
+
+httpGetAsync(url, function (response) {
+	const data = JSON.parse(response);
+	const combinedDataElement = document.getElementById("combined-data");
+
+	combinedDataElement.textContent = `IP: ${data.ip} | Country: ${data.country} | City: ${data.city} | Region: ${data.region}`;
+});
