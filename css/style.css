@@ -356,40 +356,46 @@ body {
 	margin-top: 70px;
 }
 
-/*carrrousel de platos al toque */
+/*carrrousel de platos al toque modificado */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+.slider-frame {
+	width: 1280px;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
+}
 
-.container {
-	max-width: 100%;
-	margin: auto;
+.slider-frame ul {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	padding: 0px; /* añade un relleno interno a la sección */
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
 }
 
-.contenido {
-	max-width: 800px; /* establece el ancho máximo del contenido dentro de la sección */
-	margin: 0 auto; /* centra el contenido horizontalmente */
+.slider-frame li {
+	width: 100%;
+	list-style: none;
 }
 
-/*fotos de carrousel*/
-#Videocarro {
-	height: 100%;
-	width: auto;
+.slider-frame img {
+	width: 100%;
 }
-#elegimas {
-	font-size: 50px;
-	font-weight: bold;
-	text-align: center;
-	font-family: "Oswald", sans-serif;
-	color: #ee6e73;
-	display: flex;
-	height: 100%;
-	width: auto;
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
+
 /*------sobre nosotros---------*/
 
 #sectionsobrenosotros {
